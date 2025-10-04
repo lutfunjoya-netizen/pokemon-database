@@ -1,1 +1,3 @@
-
+cd scripts
+pip install requests
+python fetch_pokemon_data.py
