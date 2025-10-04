@@ -17,7 +17,7 @@ Auto-generated: Grass Knot Power: Calculated based on the Pokémon's weight.
 60 if less than 50 kg
 80 if less than 100 kg
 100 if less than 200 kg
-120 if greater than or equal to 200 kg[1][2][3][4][5]
+120 if greater than or equal to 200 kg
 Egg Group(s): Categories for breeding purposes.
 Gender Ratio: Proportion of male to female (e.g., 50% M, 50% F, or Genderless).
 Cry: The latest official Pokémon cry.
@@ -27,7 +27,7 @@ Technologies Used
 Data Fetching & Processing: Python (with requests library)
 Frontend: React.js (or similar JavaScript framework)
 Styling: CSS
-API: PokeAPI for Pokémon data[6][7][8] and pkmnapi.com or the PokeAPI Cries GitHub repository for cries.
+API: PokeAPI for Pokémon data and pkmnapi.com or the PokeAPI Cries GitHub repository for cries.
 Setup and Installation
 1. Clone the Repository
 code
@@ -50,13 +50,13 @@ npm install
 npm start
 This will open the application in your browser (usually at http://localhost:3000).
 Data Fields Explained
-All data is fetched from PokeAPI (https://pokeapi.co/api/v2/).[[6](https://www.google.com/url?sa=E&q=https%3A%2F%2Fvertexaisearch.cloud.google.com%2Fgrounding-api-redirect%2FAUZIYQF7TWhLnRXC1zLU4RScLmUi7SDpDBn6n5NjZNhlypjYxjugnCh-xqUQB4m7Mw5RDfsgbSI2JmrLajVh3zT1QZDo44zWBeSANXbXc3dcVRn8D5czrsZeNk0tgLXTbXI8uQ7MihON)][[7](https://www.google.com/url?sa=E&q=https%3A%2F%2Fvertexaisearch.cloud.google.com%2Fgrounding-api-redirect%2FAUZIYQHl_7h8r0B44sVgnY3exiBgQbGDrClsH5FMWOAdVXBZaBQsX5tfTEq_xtbJUiX7Yy3QHbV2oNLCX4pnYw3WRmisYhULs7HnLQV00yagjXMMquL2LG4s)][[8](https://www.google.com/url?sa=E&q=https%3A%2F%2Fvertexaisearch.cloud.google.com%2Fgrounding-api-redirect%2FAUZIYQGQxPkYW-JqD__MvnP3NmVglf-U0Mpah1HBCsQsMY1g1-2eJbhdeeuX7WdFBJvPDqUQn01KeJClib8IK-28VMa6E_aijM5jpRowdX6wUz0%3D)]
-Types: Accessible via /pokemon/{id_or_name}.[6][7]
-Ability: Accessible via /pokemon/{id_or_name}.[6][7]
+All data is fetched from PokeAPI (https://pokeapi.co/api/v2/).
+Types: Accessible via /pokemon/{id_or_name}.
+Ability: Accessible via /pokemon/{id_or_name}.
 Base Stats (HP, Attack, Defense, Sp. Atk, Sp. Def, Speed): Accessible via /pokemon/{id_or_name}.
-Dex # (ID): Accessible via /pokemon/{id_or_name}.[9]
+Dex # (ID): Accessible via /pokemon/{id_or_name}.
 Gen: Requires fetching /pokemon-species/{id_or_name} and then linking to the generation resource.
-Height & Weight: Accessible via /pokemon/{id_or_name}.[9]
-Egg Group(s): Accessible via /pokemon-species/{id_or_name}.[10][11][12][13][14]
-Gender ratio: Accessible via /pokemon-species/{id_or_name}. This typically provides a gender_rate value (0-8), where 0 is genderless, and 8 is female-only. Other values correspond to male/female ratios (e.g., 1 is 12.5% female, 87.5% male).[15][16][17][18]
+Height & Weight: Accessible via /pokemon/{id_or_name}.
+Egg Group(s): Accessible via /pokemon-species/{id_or_name}.
+Gender ratio: Accessible via /pokemon-species/{id_or_name}. This typically provides a gender_rate value (0-8), where 0 is genderless, and 8 is female-only. Other values correspond to male/female ratios (e.g., 1 is 12.5% female, 87.5% male).
 Cry: The latest cry URL can be found directly in the /pokemon/{id_or_name} endpoint under the cries object, specifically cries.latest.[8] Alternatively, a dedicated Pokémon Cries API (pkmnapi.com) or the PokeAPI Cries GitHub repository provides these in .ogg format.[19][20]
