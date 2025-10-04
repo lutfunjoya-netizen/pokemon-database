@@ -1,1 +1,87 @@
+.pokemon-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 15px;
+}
 
+.pokemon-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.pokemon-image-container {
+  position: relative;
+  width: 100%;
+  padding-top: 100%; /* Creates a square container for the image */
+  overflow: hidden;
+  cursor: pointer;
+  background-color: #e0e0e0; /* Light background for image */
+  display: flex; /* For centering the image vertically/horizontally */
+  justify-content: center;
+  align-items: center;
+}
+
+.pokemon-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 80%; /* Adjust as needed */
+  max-height: 80%; /* Adjust as needed */
+  object-fit: contain;
+  filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.2));
+}
+
+.pokemon-details {
+  padding: 15px;
+  text-align: left;
+  width: 100%; /* Ensure details take full width */
+  box-sizing: border-box; /* Include padding in width */
+}
+
+.pokemon-details h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 1.4em;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.pokemon-details h3 .dex-number {
+    font-size: 0.7em;
+    color: #777;
+    margin-left: 10px;
+}
+
+.pokemon-details p {
+  margin: 5px 0;
+  font-size: 0.95em;
+  line-height: 1.4;
+}
+
+.pokemon-details strong {
+  color: #555;
+}
+
+.base-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns for stats */
+    gap: 5px 10px;
+    margin: 10px 0;
+    padding: 5px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.base-stats-grid div {
+    font-size: 0.9em;
+    color: #666;
+}
